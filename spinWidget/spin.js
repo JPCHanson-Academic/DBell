@@ -37,7 +37,7 @@ $(document).ready(function(){
   $(imageSelector).on("mousedown", function(event){
 	  var startAngle = event.pageX;
     $(document).on("mousemove",function(event){
-		dragSelector(event, startAngle)        
+		dragSelector(event, startAngle);       
     });
   });
   
@@ -53,7 +53,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(imageSelector).on("touchstart", function(event){
     $(document).on("touchmove",function(event){
-		dragSelector(event)        
+		dragSelector(event); 
     });
   });
   

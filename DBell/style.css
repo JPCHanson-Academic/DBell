@@ -6,4 +6,27 @@ Version: 0.1
 Author: Jan Hanson
 Author URI: http://jpchanson.jetos.com
 */
+body
+{
+   padding-top:55px;
+}
 
+.lower-body
+{
+ padding-top:80px; 
+}
+
+.lower-header
+{
+  top:35px;
+}
+
+.lower-sidebar
+{
+	top:20px; 
+}
+
+.lower-sidebar [data-role="content"]
+{
+	top:15px; 
+}

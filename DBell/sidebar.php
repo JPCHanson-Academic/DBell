@@ -30,6 +30,8 @@
  			<?php endif;?>
 
 		  
+		  	<?php get_search_form(); ?>
+		  
 		</div>
 		  
  	 </div>

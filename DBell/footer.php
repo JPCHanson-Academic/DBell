@@ -1,3 +1,4 @@
+	
 	<div data-role="footer">
   		<h1>Footer Text</h1>
   	</div>

@@ -25,7 +25,9 @@
 
 				 
 			 	 	<!-- the content of the post -->
+					<div data-role="main" class="ui-content">
 			   	<?php the_content(); ?>
+					</div>
 
 					<!-- the comments associated with this post -->
 					<?php comments_template();?>

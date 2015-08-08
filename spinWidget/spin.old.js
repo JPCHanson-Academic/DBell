@@ -3,65 +3,24 @@
  */
 //--------------------------------------------------------------WIDGIT INITIALISATION
 /**
- * 
+ * initialise the widget
  */
- 
 function initSpinWidget(noOfSegs, activateSelector, resultSelector, imgSelector, imgURL)
 { 		
 	spinAngle = 0;
+	startAngle = 0;
 	noOfSegments = noOfSegs;
 	buttonSelector = activateSelector;
 	resultTag = resultSelector;
 	imageSelector = imgSelector;
 	url = imgURL;
+	
+	var div = document.getElementByTagName('head').innerHTML;
+	div.innerHTML=div.innerHTML + 'test';
 }
 //--------------------------------------------------------ENDOF WIDGET INITIALISATION
 
-//--------------------------------------------------------------------EVENT LISTENERS
-/**
- * an on click event listener, which attaches to whatever selector chosen in the 
- * activateSelector parameter of the initSpinWidget function.
- */
-$(document).ready(function(){
-	$(buttonSelector).on("click", function(){
-		randomSelector();
-	});
-});
 
-/**
- *  a set of mouse event listeners, attached to the imageSelector, this listens for
- * mousedown event within the imageSelector, and attached a mousemove event to it.
- * on getting a mouseup signal it detaches the mousemove event from the document.
- */
-$(document).ready(function(){
-  $(imageSelector).on("mousedown", function(event){
-	  var startAngle = event.pageX;
-    $(document).on("mousemove",function(event){
-		dragSelector(event, startAngle);       
-    });
-  });
-  
-  $(document).on("mouseup", function(event){
-	spinAngle += event.pageX;
-    $(document).off("mousemove");
-  });
-});
-
-/**
- * touch selectors
- */
-$(document).ready(function(){
-  $(imageSelector).on("touchstart", function(event){
-    $(document).on("touchmove",function(event){
-		dragSelector(event); 
-    });
-  });
-  
-  $(document).on("touchend", function(event){
-    $(document).off("touchmove");
-  });
-});
-//--------------------------------------------------------------ENDOF EVENT LISTENERS
 
 
 //--------------------------------------------------------------------------FUNCTIONS
@@ -77,8 +36,8 @@ function randomSelector()
 	
 	var degPerSeg = 360/noOfSegments;
 	
-	spinAngle += (((Math.floor(Math.random()*12))+1)*30)+2520;
-	
+	spinAngle += ((((Math.floor(Math.random()*12))+1)*30)+2520);
+	//console.log(  spinAngle +"'"+ ((((Math.floor(Math.random()*12))+1)*30)+2520)   ); //this works fine
 	doSpin(spinAngle);
 	
 	updateResults("you randomly selected, ", noOfSegments);
@@ -139,8 +98,7 @@ function dragSelector(event, startAngle)
 	
 		console.log(event.pageX - startAngle);
 		console.log(imageCenter);
-		doSpin(event.pageX - startAngle);
-
+		doSpin(event.pageX+startAngle);
 }
 
 /**
@@ -166,12 +124,66 @@ function calculateImgCenter()
 }
 //--------------------------------------------------------------------ENDOF FUNCTIONS
 
+//--------------------------------------------------------------------EVENT LISTENERS
+/**
+ * an on click event listener, which attaches to whatever selector chosen in the 
+ * activateSelector parameter of the initSpinWidget function.
+ */
+$(document).ready(function(){
+	$(buttonSelector).on("click", function(){
+		randomSelector();
+	});
+});
+
+/**
+ *  a set of mouse event listeners, attached to the imageSelector, this listens for
+ * mousedown event within the imageSelector, and attached a mousemove event to it.
+ * on getting a mouseup signal it detaches the mousemove event from the document.
+ */ 
+// $(document).ready(function(){
+  // $(imageSelector).on("mousedown", function(event){
+//   	
+	  // startAngle = event.pageX;
+// 	  
+    // $(document).on("mousemove",function(event){
+//     	
+		// dragSelector(event, event.pageX - startAngle);       
+    // });
+//     
+    // $(document).on("mouseup", function(event){
+// 
+    	// $(document).off("mousemove");
+    	// spinAngle = spinAngle + (event.pageX - startAngle); //causing problems
+//     	
+  	// });
+  	// updateResults("you chose: ");
+  // });
+// });
+
+// /**
+ // * touch selectors
+ // */
+// $(document).ready(function(){
+  // $(imageSelector).on("touchstart", function(event){
+    // $(document).on("touchmove",function(event){
+		// dragSelector(event); 
+    // });
+  // });
+//   
+  // $(document).on("touchend", function(event){
+    // $(document).off("touchmove");
+  // });
+// });
+
+//--------------------------------------------------------------ENDOF EVENT LISTENERS
 
 //-------------------------------------------------------------------------CSS TWEAKS
-// To avoid having a seperate CSS file that would need to be included, all css
-//modifications are stored in this section.
+/**
+ * 
+ * To avoid having a seperate CSS file that would need to be included, all css
+ * modifications are stored in this section.
+ */
 $(document).ready(function(){
-	//
 	
 	$(imageSelector).css({
 						"background-image": "url("+url+")",

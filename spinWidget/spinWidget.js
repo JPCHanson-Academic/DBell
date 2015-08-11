@@ -92,7 +92,7 @@ function spinWidget(noOfSegs, activateSelector, resultSelector, imgSelector, img
 	 */
 	function calculateResults(angle,speed, randomOrSelect)
 	{
-		var extraDegrees = (Math.abs(angle) % 360);
+		var extraDegrees = (angle % 360);
 		var degPerSeg = 360/noOfSegments;
 		var resultSegment = ((extraDegrees/degPerSeg)+1);		
 		var resultText = "you "+randomOrSelect+" persona ";

@@ -1,9 +1,10 @@
 <?php get_header(); ?>
-
+<?php get_template_part('masthead');?>
 <!-- __________________________CONTENT AREA__________________________-->
 
+<?php import_javascript("positioning"); ?>
 
-  	<div data-role="content">
+  	<div data-role="content" class="content">
 		<!-- STARTOF POST LIST  -->
 		<?php if ( have_posts() ) :?>
 				<!-- STARTOF MAIN LOOP -->

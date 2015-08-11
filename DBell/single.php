@@ -25,7 +25,7 @@
 
 				 
 			 	 	<!-- the content of the post -->
-					<div data-role="main" class="ui-content">
+					<div data-role="main" class="ui-content content">
 			   	<?php the_content(); ?>
 					</div>
 

@@ -23,13 +23,6 @@
     			<?php wp_list_categories('exclude=&title_li='); ?> 
 		  </div>
 		  
-			<?php if(is_user_logged_in()):?> 
-		  			<a class="ui-btn" href="<?php echo wp_logout_url();?>">Logout</a>
-  			<?php else:?>
-					<a class="ui-btn" href="<?php echo wp_login_url();?>">Login</a>         
- 			<?php endif;?>
-
-		  
 		  	<?php get_search_form(); ?>
 		  
 		</div>

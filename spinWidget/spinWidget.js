@@ -1,15 +1,30 @@
 // STARTOF FILE
 /** CLASS SPINWIDGET
- * prototype for the creation of a self contained spinWidget object
+ * prototype for the creation of a self contained spinWidget object. In order to activate
+ * this widget call 'new' on it from inside the <head></head>  section of your document,
+ * and provide it with appropriate construction arguments (see below). from there on in 
+ * the process should be self explanatory.
  * 
  * @author JPC Hanson
  * 
  * 
+ * @param noOfSegs (int) the number of segments the spinWidget should have. Note that
+ * this parameter has nothing to do with the graphical look of the widget it is used
+ * only so that the widget can calculate the correct result segment.
  * 
- * @param noOfSegs (int)
- * @param resultSelector (String)
- * @param imgSelector (String)
- * @param imgURL (String)
+ * @param resultSelector (String) this parameter takes a string CSS selector e.g. 
+ * '.myClass' or '#myID' etc and the element corresponding to this selector will have its
+ * inner html modified to contain the result of the spinWidget selection.
+ * 
+ * @param imgSelector (String) this parameter takes a string CSS selector e.g. 
+ * '.myClass' or '#myId' etc, the element pointed to by this selector will be the anchor
+ * for the widget (probably best to use a div unless it is absolutely necessary to use
+ * 	something else)
+ * 
+ * @param imgURL (String) path to the image you wish to use as your spinning face. for 
+ * the widget to be accurate the image provided must have the same number of segments
+ * as those provided in the first parameter to this object (noOfSegs) or you will get
+ * some funky answers.
  */
 function spinWidget(noOfSegs, resultSelector, imgSelector, imgURL)
 {

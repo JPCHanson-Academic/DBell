@@ -4,17 +4,17 @@
  * 
  * @author JPC Hanson
  * 
+ * 
+ * 
  * @param noOfSegs (int)
- * @param activateSelector (String)
  * @param resultSelector (String)
  * @param imgSelector (String)
  * @param imgURL (String)
  */
-function spinWidget(noOfSegs, activateSelector, resultSelector, imgSelector, imgURL)
+function spinWidget(noOfSegs, resultSelector, imgSelector, imgURL)
 {
 	/******************************* PRIVATE VARS ********************************/
 	var noOfSegments = noOfSegs;
-	var buttonSelector = activateSelector;
 	var resultTag = resultSelector;
 	var imageSelector = imgSelector;
 	var url = imgURL;

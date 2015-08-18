@@ -16,19 +16,20 @@
   <meta charset="utf-8">
   
   <?php wp_head();?>
-   <link rel="stylesheet" href="<?php echo(get_stylesheet_directory_uri()); ?>/themes/DBell.min.css" />
-  <link rel="stylesheet" href="<?php echo(get_stylesheet_directory_uri()); ?>/themes/jquery.mobile.icons.min.css" />
-  <!-- Include jQuery Mobile stylesheets -->
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-  <!-- link to worpress style.css -->
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen"></link>
   
-  <!-- Include the jQuery library -->
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <!-- Include the jQuery Mobile library -->
-  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- link to worpress style.css -->
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen"/>
+   <script src="<?php echo(get_stylesheet_directory_uri()); ?>/js/imports.js"></script>
   
-  <script src="<?php echo(get_stylesheet_directory_uri()); ?>/js/imports.js"></script>
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+ 
     
 </head>
 
@@ -39,26 +40,9 @@
   <?php else:?>
 <body>
   <?php endif;?>
-
-
-  <div data-role="page"> 	
 	 
-	<?php get_sidebar(); ?>
-	 
-	 <?php if(is_user_logged_in()):?> 
-		<div data-role="header" data-position="fixed" class="lower-header header">
- 	 <?php else:?>
-		<div data-role="header" data-position="fixed" class="header">
-  	 <?php endif;?>
-	 
-		  	 <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
-		  <?php if(is_user_logged_in()):?> 
-		  			<a class="ui-btn" href="<?php echo wp_logout_url(home_url());?>">Logout</a>
-  			<?php else:?>
-					<a class="ui-btn" href="<?php echo wp_login_url(home_url());?>">Login</a>         
- 			<?php endif;?>
-	  		<h1><?php bloginfo('name');?></h1>
-   	</div>
+		  	
+	  <?php get_template_part('navbar');?>
 
   		
 <!--________________________ ENDOF HEADER ___________________________-->

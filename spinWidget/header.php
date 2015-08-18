@@ -8,7 +8,7 @@
 <!-- javascript needed for spin widget-->
 <script src="../../JS/Propeller/src/propeller.js"></script><!--dependancy-->
 <script src="spinWidget.js"></script><!--spinWidget-->
-<script>spinWidget = new spinWidget(12, ".spinWidgetBtn", ".result", ".wheel", "spinWheel.png");</script>
+<script>spinWidget = new spinWidget(12, ".result", ".wheel", "spinWheel.png");</script>
 </head>
 
 <html>

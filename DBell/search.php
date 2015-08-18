@@ -22,6 +22,9 @@ $the_query = new WP_Query($search_query);?>
 
 <!--_______________________ QUERY RESULTS _________________________-->
 
+<?php /*** insert page format header ***/?>
+<?php get_template_part('page_format_header');?>
+
 	<?php if ( $the_query->have_posts() ) : ?>
 	<ul>   
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
@@ -35,6 +38,9 @@ $the_query = new WP_Query($search_query);?>
 		<p>no results to display</p>
 
 	<?php endif; wp_reset_postdata();?>
+
+<?php /*** insert page format footer ***/?>
+<?php get_template_part('page_format_footer');?>
 
 <!--____________________ ENDOF QUERY RESULTS ______________________-->
 

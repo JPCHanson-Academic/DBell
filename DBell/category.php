@@ -1,7 +1,7 @@
 <?php get_header(); ?> 
 
 
-
+<div class="container-fluid">
 <!--____________________________ POST LIST ___________________________-->
 
 
@@ -13,7 +13,7 @@
 
 	<!-- POST LOOP -->
 	<?php while ( have_posts() ) : the_post();?>
-
+		<div class="panel panel-default">
 		<!-- title, link, author name and publish date -->
 		<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 		<small><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?></small>
@@ -25,7 +25,7 @@
 		<p>
 		<?php comments_popup_link( 'No comments yet', '1 comment', '% comments', 'comments-link', 'Comments closed');?>
 		</p>
-
+		</div>
 
 	<?php endwhile;?>
 	<!-- ENDOF POST LOOP -->
@@ -36,6 +36,6 @@
 
 
 <!--_________________________ ENDOF POST LIST _________________________-->
-
+</div>
 
 <?php get_footer(); ?>

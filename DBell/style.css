@@ -10,7 +10,9 @@ Author URI: http://jpchanson.jetos.com
 body
 {
    padding-top:55px;
-  
+  	background:url("images/background.png");
+ 	background-repeat:no-repeat;
+  	background-size:cover;
 }
 
 .lower-body
@@ -19,37 +21,90 @@ body
   
 }
 
-.lower-header
+.panel
 {
-  top:32px;
+ 	background:rgba(0,0,0,0.4); 
+  	color: lightgreen;
 }
 
-.lower-sidebar
+.panel-default > .panel-heading
 {
-	top:20px; 
+  background:rgba(0,0,0,0.5); 
 }
 
-.lower-sidebar [data-role="content"]
-{
-	top:15px; 
-}
+a {color:yellow}
+a:hover {color:Chartreuse;}
 
-.header
-{
-  position:fixed;
-	opacity:0.7; 
-}
-
-.footer
-{
-  bottom:0px;
-}
 /********************************ENDOF GLOBAL**********************************/
+
+/**********************************NAVBAR**************************************/
+.navbar
+{
+  background:rgba(0,0,0,0.6);
+}
+.lower-navbar
+{
+ 	padding-top:30px; 
+  	background:rgba(0,0,0,0.5);
+}
+
+.dropdown-menu, .open{background:rgba(0,0,0,0.6);}
+
+.navbar-default .navbar-nav > li > a{color: lightgreen;}
+.navbar-default .navbar-nav > li > a:hover {color: pink;}
+
+
+.navbar-default .navbar-nav > .open > a {background:rgba(0,0,0,0.3); color:pink;}
+.navbar-default .navbar-nav > .open > a:focus {background:rgba(0,0,0,0.3); color:pink;}
+.dropdown-menu > li > a {color:lightgreen;}
+
+{
+  background:rgba(0,0,0,0.6);
+  color:magenta;
+}
+
+
+.logo
+{
+   float:left;
+	width:40px;
+	height:40px;
+	margin-top:5px;
+	margin-right:2px;
+   margin-left:3px;
+}
+
+.brand
+{
+	color: magenta;
+}
+
+.rightSide
+{
+  	float:right;
+}
+.searchform
+{
+  	margin-top:5px;
+}
+.searchform > input {background:lightgreen;}
+.searchform > button {background:lightblue;}
+
+@media only screen and (max-width:700px)
+{
+  .searchform
+	{
+  		margin-top:5px;
+	 	width:30%;
+	}
+}
+
+/********************************ENDOF NAVBAR**********************************/
 .masthead
 {
 	position:auto;
   	width:100%;
-  	height:670px;
+  	height:700px;
    margin-top:-100px;
 	background-image:url("images/masthead.jpg");
 	background-repeat:no-repeat;
@@ -57,11 +112,38 @@ body
 	
 }
 
-.con
+.lower-masthead
 {
   position:auto;
-  background-image:url("images/background.png");
-  background-repeat:no-repeat;
-  background-size:cover;
-  /*top:-100px;*/
+  	width:100%;
+  	height:700px;
+   margin-top:-100px;
+	background-image:url("images/masthead.jpg");
+	background-repeat:no-repeat;
+  	background-size:cover;
+  padding:top:30px;
+}
+
+.pagebuttons
+{
+  margin:0px 10px 0px 10px;
+  color:magenta;
+}
+.btnContainer
+{
+  	margin:0px auto 0px auto;
+	text-align:center;
+ 
+}
+.siteTitle
+{
+  margin:0px auto 0px auto;
+	text-align:center;
+ 	padding-top:300px; 
+}
+.siteTitle > h1
+{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100px;
+  color: purple;
 }

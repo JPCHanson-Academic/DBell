@@ -17,7 +17,11 @@
 <!--spinWidget definition-->
 <script src="spinWidget.js"></script>
 <!--spinWidget instantiation-->
-<script>spinWidget = new spinWidget(12, ".result", ".wheel", "spinWheel.png");</script>
+<script>
+var personaArray = ["Magician","Jester","Angel","Sage","Matriarch","Mother Earth",
+                    "Queen","Warrior","Troubadour","Enchantress","Patriarch","Actor"];
+spinWidget = new spinWidget(12, ".result", ".wheel", "spinWheel.png", personaArray);
+</script>
 <!--ENDOF SPINWIDGET-->
 
 

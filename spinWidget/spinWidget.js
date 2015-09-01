@@ -26,13 +26,14 @@
  * as those provided in the first parameter to this object (noOfSegs) or you will get
  * some funky answers.
  */
-function spinWidget(noOfSegs, resultSelector, imgSelector, imgURL)
+function spinWidget(noOfSegs, resultSelector, imgSelector, imgURL, personaArray)
 {
 	/******************************* PRIVATE VARS ********************************/
 	var noOfSegments = noOfSegs;
 	var resultTag = resultSelector;
 	var imageSelector = imgSelector;
 	var url = imgURL;
+	var personas = personaArray;
 	/***************************** ENDOF PRIVATE VARS ****************************/
 	
 	/******************************** MAIN METHOD ********************************/
@@ -109,15 +110,15 @@ function spinWidget(noOfSegs, resultSelector, imgSelector, imgURL)
 	{
 		var extraDegrees = (angle % 360);
 		var degPerSeg = 360/noOfSegments;
-		var resultSegment = ((extraDegrees/degPerSeg)+1);		
+		var resultSegment = ((extraDegrees/degPerSeg));		
 		var resultText = "you "+randomOrSelect+" persona ";
 	
 		if(Math.abs(speed)<1)
 		{
-			if(Math.round(resultSegment)==13)
-				{updateResultsSegment(resultText + 1);}
-			else
-				{ updateResultsSegment(resultText + Math.round(resultSegment));}
+		    if(Math.round(resultSegment)>=0)
+		   {updateResultsSegment(Math.round(resultSegment));}
+		   else
+		   {updateResultsSegment(Math.round(resultSegment+12));}
 		}
 	} 
 	
@@ -131,7 +132,7 @@ function spinWidget(noOfSegs, resultSelector, imgSelector, imgURL)
 		{	
 			$(resultTag).fadeOut(500,function()
 			{
-				$(resultTag).val(results);
+				$(resultTag).val(personas[results]);
 			});
 			$(resultTag).fadeIn(500);
 		});

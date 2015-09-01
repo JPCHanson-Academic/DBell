@@ -80,7 +80,7 @@ function spinWidget(noOfSegs, resultSelector, imgSelector, imgURL)
 				});
 		});
 	}
-	
+
 	/**
 	 * this method does some basic CSS setup for the widget like setting the image
 	 * and element size.
@@ -131,7 +131,7 @@ function spinWidget(noOfSegs, resultSelector, imgSelector, imgURL)
 		{	
 			$(resultTag).fadeOut(500,function()
 			{
-				$(resultTag).text(results);
+				$(resultTag).val(results);
 			});
 			$(resultTag).fadeIn(500);
 		});

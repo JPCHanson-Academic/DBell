@@ -1,7 +1,13 @@
 <?php include 'header.php'; ?>
 
-<div class="wheel"></div>
+<form method="post" action="demoform.asp">
+<?php include 'spinWidget.php';?>
+        
+</form> 
 
-<div class="result">Persona</div>
+
+
+
+
 
 <?php include 'footer.php'; ?>

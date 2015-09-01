@@ -7,8 +7,27 @@ Author: Jan Hanson
 Author URI: http://jpchanson.jetos.com
 */
 /***********************************GLOBAL************************************/
+@media only screen and (max-width:700px)
+{
+	 html
+	{
+ 		
+	}
+	body
+	{
+   	padding-top:55px;
+  		background:url("images/background.png");
+ 		background-repeat:no-repeat;
+  		background-size:cover;
+	}
+}
+html
+{
+ 	height:100%;
+}
 body
 {
+	height:100%;
    padding-top:55px;
   	background:url("images/background.png");
  	background-repeat:no-repeat;
@@ -17,7 +36,8 @@ body
 
 .lower-body
 {
- padding-top:80px; 
+   height:100%;
+ 	padding-top:80px; 
   
 }
 
@@ -100,29 +120,7 @@ a:hover {color:Chartreuse;}
 }
 
 /********************************ENDOF NAVBAR**********************************/
-.masthead
-{
-	position:auto;
-  	width:100%;
-  	height:700px;
-   margin-top:-100px;
-	background-image:url("images/masthead.jpg");
-	background-repeat:no-repeat;
-  	background-size:cover;
-	
-}
-
-.lower-masthead
-{
-  position:auto;
-  	width:100%;
-  	height:700px;
-   margin-top:-100px;
-	background-image:url("images/masthead.jpg");
-	background-repeat:no-repeat;
-  	background-size:cover;
-  padding:top:30px;
-}
+/*********************************MASTHEAD*************************************/
 
 .pagebuttons
 {
@@ -135,15 +133,50 @@ a:hover {color:Chartreuse;}
 	text-align:center;
  
 }
-.siteTitle
-{
-  margin:0px auto 0px auto;
-	text-align:center;
- 	padding-top:300px; 
-}
 .siteTitle > h1
 {
   font-family: "Times New Roman", Times, serif;
   font-size: 100px;
-  color: purple;
 }
+
+.siteDescription > h2
+{
+ 	 
+}
+/********************************ENDOF MASTHEAD********************************/
+/***********************************CAROUSEL***********************************/
+.carouselImg, .carousel, .item, .active
+{
+  	width:100%;
+	height:100%;
+}
+
+#myCarousel
+{
+  	width:100%;
+  	height:100%;
+ 	top:-80px;
+  margin-bottom:-60px;
+}
+.carousel-inner{height:100%;}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:35%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
+/********************************ENDOF CAROUSEL********************************/

@@ -58,3 +58,7 @@ will apply to any panel used in the theme.
 - **btnContainer** : a container for the buttons mentioned above.
 - **siteTitle** : the title text for the site displayed on the main page.
 
+
+
+
+**Author** Jan P.C. Hanson

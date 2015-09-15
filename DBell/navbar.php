@@ -26,7 +26,7 @@
 		
 		
 		<!-- BRAND IMAGE/TEXT -->
-		<img class="navbar-left logo opaque" alt="brand" src="http://jpchanson.jetos.com/wordpress/wp-content/uploads/logo.png"/>
+		<img class="navbar-left logo opaque" alt="brand" src="<?php echo(get_stylesheet_directory_uri());?>/images/logo.png"/>
        <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><div class="brand"><?php bloginfo('name'); ?></div></a>
 	 	<!-- ENDOF BRAND IMAGE/TEXT -->
 	 	 

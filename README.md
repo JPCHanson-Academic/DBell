@@ -13,6 +13,10 @@ Appearance->Themes, assuming the permissions have been set correctly the new the
 roll over the tile associated with it you should see a button appear that allows you to activate the theme. The theme 
 should then be active.
 
+This Theme uses the HUGE-IT Slider plugin which can be found on the [wordpress plugin store](https://wordpress.org/plugins/slider-image/) (for free), 
+or on the [authors site](http://huge-it.com/slider). This will need to be installed  (use the instructions on the 
+installation tab or click on 'install plugin'), before certain theme features will work.
+
 Styling Your New Theme
 ======================
 You have a various options with regards to customising the look of the theme.
@@ -58,7 +62,24 @@ will apply to any panel used in the theme.
 - **btnContainer** : a container for the buttons mentioned above.
 - **siteTitle** : the title text for the site displayed on the main page.
 
-
-
+Useful Tutorials and WebPages
+=============================
+- [How to build a custom wordpress theme from scratch](http://blog.spoongraphics.co.uk/tutorials/how-to-build-a-custom-wordpress-theme-from-scratch)
+- [Useful little screen size emulator for testing responsive design](http://quirktools.com/screenfly/)
+- [A list of slider plugins](http://premium.wpmudev.org/blog/7-best-free-wordpress-slider-plugins/)
+- [A useful ssh/sftp pliugin if your running a home server](https://wordpress.org/plugins/ssh-sftp-updater-support/)
+- [a good tutorial for when youve had an admin bar SNAFU](https://www.webmechanix.com/wordpress-admin-bar-not-showing-up-fix)
+- [How to Enhance your categories](https://perishablepress.com/category-functions-wordpress/)
+- [Customising the Wordpress Comments Form](http://www.inkthemes.com/how-to-easily-customize-wordpress-comment-form/)
+- [SearchBar Tutorial](http://dbaines.com/blog/archive/wordpress-custom-post-type-multiple-search/#)
+- [Wordpress + Bootstrap tutorial](http://blog.teamtreehouse.com/responsive-wordpress-bootstrap-theme-tutorial)
+- [Bootstrap reference](http://getbootstrap.com/components/)
+- [W3 Schools, good reference for web technologies](http://www.w3schools.com/)
+- [Wordpress Main Documentation page](https://codex.wordpress.org/)
+- [Wordpress Template hierarchy](http://wphierarchy.com/)
+- [Wordpress Template function reference](https://codex.wordpress.org/Template_Tags)
+- [PHP manual, the place to go when your struggling with PHP](http://php.net/manual/en/index.php)
+- [Wordpress installation Tutorial](https://codex.wordpress.org/Installing_WordPress)
+- [Wordpress developer documentation](https://codex.wordpress.org/Developer_Documentation)
 
 **Author** Jan P.C. Hanson

@@ -1,0 +1,142 @@
+/********************************SOCIAL MEDIA BUTTON PANEL**********************************/
+#socialBtnContainerTopLeft
+{
+  	position:fixed;
+  	background:rgba(0,0,0,0.6);
+  	top:80px;
+  	left:-75px;
+	max-width:75px;
+  	min-width:75px;
+  	border-style:solid;
+   border-color:rgba(0,0,0,0.6);
+   border-width:1px;
+  	margin-bottom:20px;
+}
+#SocialLabelTopLeft
+{
+ 	position:fixed;
+   background:rgba(0,0,0,0.6);
+   color:white;
+   border-color:rgba(0,0,0,0.6);
+ 	transform:rotate(90deg);
+  	border-style:solid;
+   border-width:1px;
+  	padding-left:9px;
+   top:99px;
+  	left:-20px;
+  	width:60px;
+}
+
+#socialBtnContainerTopRight
+{
+  	position:fixed;
+  	background:rgba(0,0,0,0.6);
+  	top:80px;
+  	right:-75px;
+	max-width:75px;
+  	min-width:75px;
+  	border-style:solid;
+   border-color:rgba(0,0,0,0.6);
+   border-width:1px;
+  	margin-bottom:20px;
+}
+#SocialLabelTopRight
+{
+ 	position:fixed;
+  	float:right;
+   background:rgba(0,0,0,0.6);
+   color:white;
+   border-color:rgba(0,0,0,0.6);
+ 	transform:rotate(-90deg);
+  	border-style:solid;
+   border-width:1px;
+  	padding-left:9px;
+   top:99px;
+  	right:-20px;
+  	width:60px;
+}
+#socialBtnContainerBottomLeft
+{
+  	position:fixed;
+  	background:rgba(0,0,0,0.6);
+  	bottom:-16px;
+  	left:-75px;
+	max-width:75px;
+  	min-width:75px;
+  	border-style:solid;
+   border-color:rgba(0,0,0,0.6);
+   border-width:1px;
+  	margin-bottom:20px;
+}
+#SocialLabelBottomLeft
+{
+ 	position:fixed;
+   background:rgba(0,0,0,0.6);
+   color:white;
+   border-color:rgba(0,0,0,0.6);
+ 	transform:rotate(90deg);
+  	border-style:solid;
+   border-width:1px;
+  	padding-left:9px;
+   bottom:90px;
+  	left:-20px;
+  	width:60px;
+}
+
+#socialBtnContainerBottomRight
+{
+  	position:fixed;
+  	background:rgba(0,0,0,0.6);
+  	bottom:-16px;
+  	right:-75px;
+	max-width:75px;
+  	min-width:75px;
+  	border-style:solid;
+   border-color:rgba(0,0,0,0.6);
+   border-width:1px;
+  	margin-bottom:20px;
+}
+#SocialLabelBottomRight
+{
+ 	position:fixed;
+  	float:right;
+   background:rgba(0,0,0,0.6);
+   color:white;
+   border-color:rgba(0,0,0,0.6);
+ 	transform:rotate(-90deg);
+  	border-style:solid;
+   border-width:1px;
+  	padding-left:9px;
+   bottom:90px;
+  	right:-20px;
+  	width:60px;
+}
+
+
+#googlePlusBtn
+{
+  	position:relative;
+ 	width:75px; 
+  	margin-top:7px;
+  	margin-bottom:3px;
+	margin-left:12px;
+}
+#twitterBtn
+{
+ 	width:75px; 
+   margin-bottom:6px;
+   margin-left:9px;
+}
+#facebookBtn
+{
+ 	width:75px;
+  	margin-bottom:10px;
+   margin-left:9px;
+}
+#linkedInBtn
+{
+ 	width:75px; 
+   margin-bottom:0px;
+   margin-left:5px;
+}
+/*******************************ENDOF SOCIAL MEDIA BUTTON PANEL*****************************/

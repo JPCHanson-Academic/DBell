@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <?php get_template_part('masthead');?>
+
 <!-- __________________________CONTENT AREA__________________________-->
 <div class="container-fluid">
 		<!-- STARTOF POST LIST  -->

@@ -13,10 +13,6 @@ Appearance->Themes, assuming the permissions have been set correctly the new the
 roll over the tile associated with it you should see a button appear that allows you to activate the theme. The theme 
 should then be active.
 
-This Theme uses the HUGE-IT Slider plugin which can be found on the [wordpress plugin store](https://wordpress.org/plugins/slider-image/) (for free), 
-or on the [authors site](http://huge-it.com/slider). This will need to be installed  (use the instructions on the 
-installation tab or click on 'install plugin'), before certain theme features will work.
-
 Styling Your New Theme
 ======================
 You have a various options with regards to customising the look of the theme.
@@ -64,6 +60,8 @@ will apply to any panel used in the theme.
 
 Useful Tutorials and WebPages
 =============================
+- [wordpress customizer tutorial](http://themefoundation.com/wordpress-theme-customizer/)
+- [Permissions for wordpress tutorial and howto](http://www.smashingmagazine.com/2014/05/proper-wordpress-filesystem-permissions-ownerships/)
 - [How to build a custom wordpress theme from scratch](http://blog.spoongraphics.co.uk/tutorials/how-to-build-a-custom-wordpress-theme-from-scratch)
 - [Useful little screen size emulator for testing responsive design](http://quirktools.com/screenfly/)
 - [A list of slider plugins](http://premium.wpmudev.org/blog/7-best-free-wordpress-slider-plugins/)
@@ -81,5 +79,8 @@ Useful Tutorials and WebPages
 - [PHP manual, the place to go when your struggling with PHP](http://php.net/manual/en/index.php)
 - [Wordpress installation Tutorial](https://codex.wordpress.org/Installing_WordPress)
 - [Wordpress developer documentation](https://codex.wordpress.org/Developer_Documentation)
+- [pretty awesome touch enabled carousel](http://kenwheeler.github.io/slick/)
+- [wordpress reference for enqueue script](https://codex.wordpress.org/Function_Reference/wp_enqueue_script)
+- []()
 
 **Author** Jan P.C. Hanson

@@ -6,6 +6,8 @@ Version: 0.1
 Author: Jan Hanson
 Author URI: http://jpchanson.jetos.com
 */
+
+@import 'socialmediapanel.css';
 /***********************************GLOBAL************************************/
 
 html
@@ -14,7 +16,7 @@ html
 }
 body
 {
-
+	height:100%;
    padding-top:55px;
   	background: #db36a4; /* Old browsers */
 	background: -moz-linear-gradient(top, #db36a4 1%, #5e6eff 51%, #db36a4 100%); /* FF3.6+ */
@@ -28,7 +30,10 @@ body
   	background-size:cover;
 }
 
-
+body p
+{
+  font-size:17px;
+}
 .lower-body
 {
    height:100%;
@@ -56,6 +61,7 @@ a:hover {color:Chartreuse;}
 .navbar
 {
   background:rgba(0,0,0,0.6);
+  border-color:rgba(0,0,0,0.6);
 }
 .lower-navbar
 {
@@ -119,13 +125,19 @@ a:hover {color:Chartreuse;}
 
 .pagebuttons
 {
-  margin:0px 10px 0px 10px;
+  margin:0px 10px 5px 10px;
   color:magenta;
 }
+p.pagebuttons
+  {
+	 color:rgb(105, 0, 0);
+	 background:rgba(255, 204, 102,0.6);
+  }
 .btnContainer
 {
   	margin:0px auto 0px auto;
 	text-align:center;
+  	width:45%;
  
 }
 .siteTitle > h1
@@ -133,12 +145,40 @@ a:hover {color:Chartreuse;}
   font-family: "Times New Roman", Times, serif;
   font-size: 100px;
 }
-
 .siteDescription > h2
 {
  	 
 }
+
+@media only screen and (max-width:700px)
+{
+  	.pagebuttons
+	{
+  		margin:0px 5px 10px 5px;
+  		color:magenta;
+	}
+	.btnContainer
+	{
+  		margin:0px auto 0px auto;
+		text-align:center;
+  		width:75%;
+	}
+  .siteTitle > h1
+	{
+ 		font-family: "Times New Roman", Times, serif;
+  		font-size: 70px;
+  		color:ivory;
+	 	text-align:center;
+	}
+	.siteDescription > h2
+	{
+ 	 	color:ivory;
+	 	margin:10px;
+  		text-align:center;
+	}
+}
 /********************************ENDOF MASTHEAD********************************/
+
 /***********************************CAROUSEL***********************************/
 .carouselImg, .carousel, .item, .active
 {
